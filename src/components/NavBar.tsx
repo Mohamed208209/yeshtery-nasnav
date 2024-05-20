@@ -3,7 +3,7 @@ const NavBar = () => {
     <div className="bg-white text-gray-900 flex justify-between items-center p-4 shadow">
       <div className="flex items-center space-x-4">
         <div className="flex items-center border border-gray-300 rounded-full px-2">
-          <img src="public/images/search.svg" alt="search" />
+          <img src="images/search.svg" alt="search" />
           <input
             type="text"
             placeholder="Search"
@@ -12,19 +12,19 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex items-center  mx-auto space-x-1">
-        <img src="public/images/adidas-large.svg" alt="adidas" />
+        <img src="images/adidas-large.svg" alt="adidas" />
       </div>
       <div className="flex items-center space-x-4">
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/cart.svg" alt="cart" />
+          <img src="images/cart.svg" alt="cart" />
           <span>Cart</span>
         </a>
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/heart.svg" alt="heart" />
+          <img src="images/heart.svg" alt="heart" />
           <span>Wishlist</span>
         </a>
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/person.svg" alt="person" />
+          <img src="images/person.svg" alt="person" />
           <span>Login</span>
         </a>
       </div>

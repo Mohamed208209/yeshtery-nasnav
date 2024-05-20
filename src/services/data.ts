@@ -4,11 +4,11 @@ export const products: ProductCardProps[] = [
   {
     title: "Product 1",
     description: "Product 1 description",
-    photo: "/public/images/product-1.png",
+    photo: "images/product-1.png",
     price: 100,
     brand: {
       title: "Brand 1",
-      logo: "/public/images/adidas.svg",
+      logo: "images/adidas.svg",
     },
     discount: {
       insteadOf: 200,
@@ -20,11 +20,11 @@ export const products: ProductCardProps[] = [
   {
     title: "Product 2",
     description: "Product 2 description",
-    photo: "/public/images/product-2.png",
+    photo: "images/product-2.png",
     price: 200,
     brand: {
       title: "Brand 2",
-      logo: "/public/images/adidas.svg",
+      logo: "images/adidas.svg",
     },
     discount: {
       insteadOf: 300,
@@ -36,11 +36,11 @@ export const products: ProductCardProps[] = [
   {
     title: "Product 3",
     description: "Product 3 description",
-    photo: "/public/images/product-3.png",
+    photo: "images/product-3.png",
     price: 300,
     brand: {
       title: "Brand 3",
-      logo: "/public/images/adidas.svg",
+      logo: "images/adidas.svg",
     },
     discount: {
       insteadOf: 400,
@@ -53,11 +53,11 @@ export const products: ProductCardProps[] = [
   {
     title: "Product 4",
     description: "Product 4 description",
-    photo: "/public/images/product-4.png",
+    photo: "images/product-4.png",
     price: 300,
     brand: {
       title: "Brand 4",
-      logo: "/public/images/adidas.svg",
+      logo: "images/adidas.svg",
     },
     discount: {
       insteadOf: 400,

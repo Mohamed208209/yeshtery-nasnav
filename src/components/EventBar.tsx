@@ -3,13 +3,13 @@ const EventBar = () => {
     <div className="bg-primary text-gray-900 flex justify-between items-center p-2 text-sm">
       <div className="flex items-center space-x-4">
         <button className="focus:outline-none">
-          <img src="public/images/menu.svg" alt="menu" />
+          <img src="images/menu.svg" alt="menu" />
         </button>
-        <img src="public/images/logo.svg" alt="logo" />
+        <img src="images/logo.svg" alt="logo" />
       </div>
       <div className="flex items-center space-x-4">
         <button>
-          <img src="public/images/left-arrow.svg" alt="left" />
+          <img src="images/left-arrow.svg" alt="left" />
         </button>
         <span>
           Valentine's Day Offers! Buy Two Get One Free{" "}
@@ -18,18 +18,18 @@ const EventBar = () => {
           </a>
         </span>
         <button>
-          <img src="public/images/right-arrow.svg" alt="right" />
+          <img src="images/right-arrow.svg" alt="right" />
         </button>
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/phone.svg" alt="phone" />
+          <img src="images/phone.svg" alt="phone" />
           <span>Contact Us</span>
         </a>
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/shop-cart.svg" alt="shop cart" />
+          <img src="images/shop-cart.svg" alt="shop cart" />
           <span>Track Order</span>
         </a>
         <a href="#" className="flex items-center space-x-1">
-          <img src="public/images/pointer.svg" alt="pointer" />
+          <img src="images/pointer.svg" alt="pointer" />
           <span>Find A Store</span>
         </a>
       </div>

@@ -13,20 +13,13 @@ export const Footer = () => {
       <div className="flex justify-between items-center col-span-4">
         <p>@ 2021 yeshtrey, all rights reserved</p>
         <div className="ml-4 flex">
-          <img
-            src="public/images/cash-on-delivery.png"
-            alt="cash on delivery"
-          />
-          <img src="public/images/visa.png" alt="visa" />
-          <img src="public/images/mastercard.png" alt="mastercard" />
+          <img src="images/cash-on-delivery.png" alt="cash on delivery" />
+          <img src="images/visa.png" alt="visa" />
+          <img src="images/mastercard.png" alt="mastercard" />
         </div>
         <div className="ml-4 items-center flex">
           <p>Powered by nasnav</p>
-          <img
-            className="w-5 h-4 ml-1"
-            src="public/images/nasnav.png"
-            alt="nasnav"
-          />
+          <img className="w-5 h-4 ml-1" src="images/nasnav.png" alt="nasnav" />
         </div>
       </div>
     </footer>

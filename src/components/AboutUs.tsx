@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div>
-      <img className="mb-4" src="public/images/yellow-logo.svg" alt="logo" />
+      <img className="mb-4" src="images/yellow-logo.svg" alt="logo" />
       <div>
         <p className="mb-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, id

@@ -5,7 +5,7 @@ const ProductDetails = () => {
   return (
     <div className="max-w-sm mx-auto  ">
       <header>
-        <img className="mb-2" src="public/images/adidas.svg" alt="adidas" />
+        <img className="mb-2" src="images/adidas.svg" alt="adidas" />
         <h1 className="text-lg font-bold">
           Adidas black t-Shirt lorem ipsum dolor sit amet, consectetur
           adipiscing elit.
@@ -47,8 +47,8 @@ const ProductDetails = () => {
       </div>
       <p className="font-bold text-lg my-4">Color</p>{" "}
       <div className="mt-2 flex gap-3">
-        <img src="public/images/red-tshirt.png" alt="Red T-Shirt" />{" "}
-        <img src="public/images/black-tshirt.png" alt="Black T-Shirt" />
+        <img src="images/red-tshirt.png" alt="Red T-Shirt" />{" "}
+        <img src="images/black-tshirt.png" alt="Black T-Shirt" />
       </div>
       <div className="mt-4">
         <p className="font-bold text-lg my-2"> Quantity:</p>

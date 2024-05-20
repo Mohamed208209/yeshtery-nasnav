@@ -9,7 +9,7 @@ const SubscribeButton = () => {
       />
       <button className="flex items-center gap-2 h-11 bg-primary rounded-full p-2 text-black">
         <span> Subscribe</span>
-        <img src="public/images/subscribe.svg" alt="subscribe" />
+        <img src="images/subscribe.svg" alt="subscribe" />
       </button>
     </div>
   );

@@ -22,20 +22,19 @@ const Services = () => {
       <div className="col-span-1">
         <ul>
           <li>
-            <img src="public/images/facebook.svg" alt="facebook" />
+            <img src="images/facebook.svg" alt="facebook" />
             <span>YESHTERY</span>
           </li>
           <li>
-            <img src="public/images/linkedin.svg" alt="linkedin" />{" "}
+            <img src="images/linkedin.svg" alt="linkedin" />{" "}
             <span>YESHTERY</span>
           </li>
           <li>
-            <img src="public/images/instagram.svg" alt="instagram" />{" "}
+            <img src="images/instagram.svg" alt="instagram" />{" "}
             <span>YESHTERY</span>
           </li>
           <li>
-            <img src="public/images/twitter.svg" alt="twitter" />{" "}
-            <span>YESHTERY</span>
+            <img src="images/twitter.svg" alt="twitter" /> <span>YESHTERY</span>
           </li>
         </ul>
       </div>
