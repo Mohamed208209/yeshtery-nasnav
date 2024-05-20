@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.transparent-input {
+  background-color: transparent;
+}
+
+.transparent-input:focus,
+.transparent-input:not(:placeholder-shown) {
+  background-color: transparent;
+}
+footer ul {
+  @apply mt-6;
+}
+footer ul li {
+  @apply my-4 flex items-center gap-2;
+}
