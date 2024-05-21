@@ -6,6 +6,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .transparent-input {
@@ -35,11 +37,11 @@ body {
 }
 
 .navbar-logo {
-  @apply flex items-center mx-auto space-x-1 mb-2 md:mb-0;
+  @apply flex items-center space-x-1 mb-2 md:mb-0 max-sm:w-1/4 max-sm:h-1/4 max-sm:mb-3;
 }
 
 .navbar-links {
-  @apply flex items-center space-x-4;
+  @apply flex items-center space-x-4 justify-between max-sm:w-full;
 }
 
 .navbar-link {
@@ -75,7 +77,7 @@ body {
 }
 
 .eventbar-contacts {
-  @apply flex flex-col md:flex-row items-center space-y-2 md:space-y-0 space-x-0 md:space-x-4;
+  @apply flex items-center space-y-2 md:space-y-0 space-x-0 md:space-x-4 max-sm:w-full max-sm:justify-around;
 }
 
 .eventbar-contact-link {

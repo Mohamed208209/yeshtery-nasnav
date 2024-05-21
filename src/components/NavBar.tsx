@@ -1,5 +1,4 @@
 const NavBar = () => {
-  // TODO: Add interactivity
   return (
     <div className="navbar-container">
       {/* Search Button */}
@@ -30,41 +29,31 @@ const NavBar = () => {
       </div>
       {/* Login, Cart and Wishlist */}
       <div className="navbar-links">
-        <NavLink
-          href="#"
-          imgSrc="images/cart.svg"
-          imgAlt="Shopping cart"
-          text="Cart"
-        />
-        <NavLink
-          href="#"
-          imgSrc="images/heart.svg"
-          imgAlt="Wishlist"
-          text="Wishlist"
-        />
-        <NavLink
-          href="#"
-          imgSrc="images/person.svg"
-          imgAlt="User login"
-          text="Login"
-        />
+        <a href="#" className="navbar-link">
+          <img
+            src="images/cart.svg"
+            alt="Shopping cart"
+            width="24"
+            height="24"
+          />
+          <span>Cart</span>
+        </a>
+        <a href="#" className="navbar-link">
+          <img src="images/heart.svg" alt="Wishlist" width="24" height="24" />
+          <span>Wishlist</span>
+        </a>
+        <a href="#" className="navbar-link">
+          <img
+            src="images/person.svg"
+            alt="User login"
+            width="24"
+            height="24"
+          />
+          <span>Login</span>
+        </a>
       </div>
     </div>
   );
 };
-
-type NavLinkProps = {
-  href: string;
-  imgSrc: string;
-  imgAlt: string;
-  text: string;
-};
-
-const NavLink = ({ href, imgSrc, imgAlt, text }: NavLinkProps) => (
-  <a href={href} className="navbar-link">
-    <img src={imgSrc} alt={imgAlt} width="24" height="24" />
-    <span>{text}</span>
-  </a>
-);
 
 export default NavBar;
