@@ -81,7 +81,11 @@ body {
 
 /* CategoryBar specific styles */
 .categorybar-container {
-  @apply flex justify-between bg-black text-white p-4;
+  @apply flex  bg-black text-white p-4 flex-wrap;
+}
+
+.categorybar-container li {
+  @apply mx-2;
 }
 
 .categorybar-link-button a {
@@ -89,7 +93,7 @@ body {
 }
 
 .categorybar-links {
-  @apply flex space-x-2 mt-2 ml-4;
+  @apply flex space-x-2 mt-2 ml-4 flex-wrap;
 }
 
 p .categorybar-link-button a {
