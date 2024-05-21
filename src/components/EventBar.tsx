@@ -80,7 +80,7 @@ type ContactLinkProps = {
 
 const ContactLink = ({ href, imgSrc, imgAlt, text }: ContactLinkProps) => (
   <a href={href} className="eventbar-contact-link">
-    <img src={imgSrc} alt={imgAlt} width="16" height="16" />
+    <img className="my-1" src={imgSrc} alt={imgAlt} width="16" height="16" />
     <span>{text}</span>
   </a>
 );

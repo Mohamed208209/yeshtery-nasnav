@@ -110,13 +110,13 @@ p .categorybar-link-button {
 
 /* ProductGallery Component specific styles */
 .product-gallery-container {
-  @apply flex flex-col;
+  @apply flex items-center flex-col max-h-80;
 }
 .product-gallery-main {
-  @apply h-[60vh];
+  @apply h-[60vh] my-1;
 }
 .product-gallery-main img {
-  @apply w-[100%] h-[100%] rounded-lg max-w-[50vw] mx-auto;
+  @apply w-[100%] h-[100%]  rounded-lg max-w-[50vw] mx-auto;
 }
 .product-gallery-thumbnails {
   @apply flex items-center justify-center space-x-2 mt-4;
