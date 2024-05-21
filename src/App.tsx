@@ -1,4 +1,4 @@
-// import useCounter from "./components/custom hooks/useCounter";
+// import useCounter from "./components/customhooks/useCounter";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
 import TopBar from "./components/TopBar";

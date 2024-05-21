@@ -19,9 +19,12 @@ const EventBar = () => {
       <div className="eventbar-links">
         {/* Offers Navigation */}
         <div className="eventbar-offers-nav">
-          <button type="button" aria-label="Previous offer">
+          <button
+            className="eventbar-nav-button"
+            type="button"
+            aria-label="Previous offer"
+          >
             <img
-              className="eventbar-nav-button"
               src="images/left-arrow.svg"
               alt="Previous offer"
               width="16"
@@ -30,13 +33,16 @@ const EventBar = () => {
           </button>
           <span className="eventbar-nav-link">
             Valentine's Day Offers! Buy Two Get One Free{" "}
-            <a href="#" className="font-bold underline mx-1">
+            <a href="#" className="font-bold underline mx-1 align-top">
               Shop Now
             </a>
           </span>
-          <button type="button" aria-label="Next offer">
+          <button
+            className="eventbar-nav-button w-3"
+            type="button"
+            aria-label="Next offer"
+          >
             <img
-              className="eventbar-nav-button w-3"
               src="images/right-arrow.svg"
               alt="Next offer"
               width="12"
