@@ -1,4 +1,4 @@
-const NavBar = ({ count }: { count: number }) => {
+const NavBar = () => {
   // TODO: Add interactivity
   return (
     <div className="navbar-container">

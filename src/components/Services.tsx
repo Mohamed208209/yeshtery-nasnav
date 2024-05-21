@@ -1,4 +1,3 @@
-import React from "react";
 import SubscribeButton from "./SubscribeButton";
 
 const Services = () => {
