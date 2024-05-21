@@ -1,40 +1,88 @@
 const EventBar = () => {
+  // TODO: Add interactivity
   return (
-    <div className="bg-primary text-gray-900 flex justify-between items-center p-2 text-sm">
-      <div className="flex items-center space-x-4">
-        <button className="focus:outline-none">
-          <img src="images/menu.svg" alt="menu" />
+    <div className="eventbar-container">
+      {/* Logo and menu button */}
+      <div className="eventbar-logo-menu">
+        <button type="button" className="focus:outline-none" aria-label="Menu">
+          <img src="images/menu.svg" alt="Open menu" width="24" height="24" />
         </button>
-        <img src="images/logo.svg" alt="logo" />
+        <img
+          src="images/logo.svg"
+          alt="Company logo"
+          width="100"
+          height="100"
+        />
       </div>
-      <div className="flex items-center space-x-4">
-        <button>
-          <img src="images/left-arrow.svg" alt="left" />
-        </button>
-        <span>
-          Valentine's Day Offers! Buy Two Get One Free{" "}
-          <a href="#" className="font-bold underline">
-            Shop Now
-          </a>
-        </span>
-        <button>
-          <img src="images/right-arrow.svg" alt="right" />
-        </button>
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/phone.svg" alt="phone" />
-          <span>Contact Us</span>
-        </a>
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/shop-cart.svg" alt="shop cart" />
-          <span>Track Order</span>
-        </a>
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/pointer.svg" alt="pointer" />
-          <span>Find A Store</span>
-        </a>
+
+      {/* Event bar links */}
+      <div className="eventbar-links">
+        {/* Offers Navigation */}
+        <div className="eventbar-offers-nav">
+          <button type="button" aria-label="Previous offer">
+            <img
+              className="eventbar-nav-button"
+              src="images/left-arrow.svg"
+              alt="Previous offer"
+              width="16"
+              height="16"
+            />
+          </button>
+          <span className="eventbar-nav-link">
+            Valentine's Day Offers! Buy Two Get One Free{" "}
+            <a href="#" className="font-bold underline mx-1">
+              Shop Now
+            </a>
+          </span>
+          <button type="button" aria-label="Next offer">
+            <img
+              className="eventbar-nav-button w-3"
+              src="images/right-arrow.svg"
+              alt="Next offer"
+              width="12"
+              height="16"
+            />
+          </button>
+        </div>
+
+        {/* Contacts */}
+        <div className="eventbar-contacts">
+          <ContactLink
+            href="#"
+            imgSrc="images/phone.svg"
+            imgAlt="phone"
+            text="Contact Us"
+          />
+          <ContactLink
+            href="#"
+            imgSrc="images/shop-cart.svg"
+            imgAlt="shop cart"
+            text="Track Order"
+          />
+          <ContactLink
+            href="#"
+            imgSrc="images/pointer.svg"
+            imgAlt="pointer"
+            text="Find A Store"
+          />
+        </div>
       </div>
     </div>
   );
 };
+
+type ContactLinkProps = {
+  href: string;
+  imgSrc: string;
+  imgAlt: string;
+  text: string;
+};
+
+const ContactLink = ({ href, imgSrc, imgAlt, text }: ContactLinkProps) => (
+  <a href={href} className="eventbar-contact-link">
+    <img src={imgSrc} alt={imgAlt} width="16" height="16" />
+    <span>{text}</span>
+  </a>
+);
 
 export default EventBar;

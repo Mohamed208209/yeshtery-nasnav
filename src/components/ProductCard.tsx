@@ -1,3 +1,5 @@
+import React from "react";
+
 export type ProductCardProps = {
   photo: string;
   title: string;
@@ -14,7 +16,8 @@ export type ProductCardProps = {
   rating: number;
   from: string;
 };
-const ProductCard = ({
+
+const ProductCard: React.FC<ProductCardProps> = ({
   title,
   photo,
   description,
@@ -25,23 +28,40 @@ const ProductCard = ({
   from,
 }: ProductCardProps) => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <img loading="lazy" src={photo} alt={title} />
-      <p>{description}</p>
-      <div className="flex justify-between">
-        <div>
-          <p>{price} Le</p>
+    <div className="product-card-container">
+      <img
+        loading="lazy"
+        className="product-card-image"
+        src={photo}
+        alt={title}
+      />
+      <p className="product-card-description">{description}</p>
+      <div className="product-card-price-container">
+        <div className="product-card-price">
+          <p>{price} LE</p>
           <p>
-            <span>{discount.insteadOf} Le</span>{" "}
-            <span>{discount.percentage}%</span>
+            <span className="product-card-orginal-price">
+              {discount.insteadOf} LE
+            </span>{" "}
+            <span className="product-card-discount">
+              {discount.percentage}% Off
+            </span>
           </p>
         </div>
-        <img src={brand.logo} alt={brand.title} />
+        <img
+          className="product-card-brand-logo"
+          src={brand.logo}
+          alt={brand.title}
+        />
       </div>
-      <div className="flex">
-        <p>{rating} of 5</p>
+      <div className="product-card-rating">
+        <p>
+          {" "}
+          <span className="product-card-stars">★★★★☆ </span>
+          {rating} of 5
+        </p>
       </div>
-      <p>Pickup From: {from}</p>
+      <p className="product-card-location">Pickup From: {from}</p>
     </div>
   );
 };

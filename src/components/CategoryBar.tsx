@@ -1,33 +1,63 @@
 const CategoryBar = () => {
   return (
     <div>
-      <ul className="flex justify-between bg-black text-white p-4">
-        <li>Men</li>
-        <li>Women</li>
-        <li>Unisex</li>
-        <li>Kids</li>
-        <li>Best Sellers</li>
-        <li>New Arrivals</li>
-        <li>Offers</li>
+      <ul className="categorybar-container">
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Men</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Women</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Unisex</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Kids</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Best Sellers</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">New Arrivals</a>
+          </button>
+        </li>
+        <li>
+          <button className="categorybar-link-button" type="button">
+            <a href="#">Offers</a>
+          </button>
+        </li>
       </ul>
-      <p>
-        <a className="underline" href="#">
-          Men
-        </a>{" "}
+      <p className="categorybar-links">
+        <button className="categorybar-link-button" type="button">
+          <a href="#">Men</a>
+        </button>{" "}
         /{" "}
-        <a className="underline" href="#">
-          Clothing
-        </a>{" "}
-        /
-        <a className="underline" href="#">
-          {" "}
-          Tops{" "}
-        </a>
-        <a className="underline" href="#">
-          {" "}
-          Adidas{" "}
-        </a>{" "}
-        /<a href="#"> Adidas Black T-Shirt</a>
+        <button className="categorybar-link-button" type="button">
+          <a href="#">Clothing</a>
+        </button>{" "}
+        /{" "}
+        <button className="categorybar-link-button" type="button">
+          <a href="#">Tops</a>
+        </button>{" "}
+        /{" "}
+        <button className="categorybar-link-button" type="button">
+          <a href="#">Adidas</a>
+        </button>{" "}
+        /{" "}
+        <button className="categorybar-link-button" type="button">
+          <a href="#">Adidas Black T-Shirt</a>
+        </button>
       </p>
     </div>
   );

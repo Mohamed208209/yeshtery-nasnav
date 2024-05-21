@@ -16,9 +16,268 @@ body {
 .transparent-input:not(:placeholder-shown) {
   background-color: transparent;
 }
-footer ul {
-  @apply mt-6;
+
+/* Navbar specific styles */
+.navbar-container {
+  @apply bg-white text-gray-900 flex flex-wrap justify-between items-center p-4 shadow-md;
 }
-footer ul li {
-  @apply my-4 flex items-center gap-2;
+
+.navbar-search {
+  @apply flex items-center space-x-4 mb-2 md:mb-0;
+}
+
+.navbar-search-input-container {
+  @apply flex items-center border border-gray-300 rounded-full px-2;
+}
+
+.navbar-search-input {
+  @apply px-4 py-2 w-48 md:w-64 focus:outline-none;
+}
+
+.navbar-logo {
+  @apply flex items-center mx-auto space-x-1 mb-2 md:mb-0;
+}
+
+.navbar-links {
+  @apply flex items-center space-x-4;
+}
+
+.navbar-link {
+  @apply flex items-center space-x-1;
+}
+
+/* EventBar specific styles */
+.eventbar-container {
+  @apply bg-primary text-gray-900 flex flex-wrap justify-between items-center p-2 text-sm md:flex-nowrap;
+}
+
+.eventbar-logo-menu {
+  @apply flex items-center space-x-4 mb-2 md:mb-0;
+}
+
+.eventbar-links {
+  @apply flex flex-col md:flex-row items-center space-y-2 md:space-y-0 space-x-0 md:space-x-4;
+}
+
+.eventbar-offers-nav {
+  @apply flex items-center mx-2 space-x-2 md:space-x-4;
+}
+
+.eventbar-nav-button {
+  @apply w-4 h-4;
+}
+
+.eventbar-nav-link {
+  @apply text-center;
+}
+
+.eventbar-contacts {
+  @apply flex flex-col md:flex-row items-center space-y-2 md:space-y-0 space-x-0 md:space-x-4;
+}
+
+.eventbar-contact-link {
+  @apply flex items-center space-x-1;
+}
+
+/* CategoryBar specific styles */
+.categorybar-container {
+  @apply flex justify-between bg-black text-white p-4;
+}
+
+.categorybar-link-button a {
+  @apply text-white;
+}
+
+.categorybar-links {
+  @apply flex space-x-2 mt-2 ml-4;
+}
+
+p .categorybar-link-button a {
+  @apply text-black underline font-semibold;
+}
+
+p .categorybar-link-button:last-child a {
+  @apply no-underline; /* Ideally removing the underline should be done by javascript along with disabling the button */
+}
+
+p .categorybar-link-button {
+  @apply focus:outline-none;
+}
+
+/* ProductGallery Component specific styles */
+.product-gallery-container {
+  @apply flex flex-col;
+}
+.product-gallery-main {
+  @apply h-[60vh];
+}
+.product-gallery-main img {
+  @apply w-[100%] h-[100%] rounded-lg max-w-[50vw] mx-auto;
+}
+.product-gallery-thumbnails {
+  @apply flex items-center justify-center space-x-2 mt-4;
+}
+
+.product-gallery-thumbnails img {
+  @apply w-20 h-20;
+}
+
+.product-gallery-thumbnails button img {
+  @apply w-8 h-8;
+}
+
+/* ProductDetails Component specific styles */
+.container {
+  @apply max-w-sm mx-auto;
+}
+
+header img {
+  @apply mb-2;
+}
+
+header h1 {
+  @apply text-lg font-bold;
+}
+
+header p {
+  @apply text-gray-500;
+}
+
+.rating {
+  @apply text-yellow-500 text-[1.5em] my-4;
+}
+
+.rating span {
+  @apply text-black font-bold;
+}
+
+.rating .rates {
+  @apply text-gray-500 text-[.7em];
+}
+
+.price {
+  @apply text-secondary text-[1.8em];
+}
+
+.price .original-price {
+  @apply text-gray-500 mx-3 line-through text-[.7em];
+}
+
+.price .discount {
+  @apply font-bold bg-primary text-[0.8em] text-black;
+}
+
+.divider {
+  @apply border border-gray-300 rounded;
+}
+
+.size-options,
+.color-options {
+  @apply flex my-4;
+}
+
+.size-options button {
+  @apply border border-gray-300 h-16 w-16 font-bold text-secondary rounded-full text-center px-1;
+}
+
+.size-options {
+  @apply flex gap-4 text-[0.8em];
+}
+
+.color-options img {
+  @apply mr-3;
+}
+
+.actions {
+  @apply flex justify-between my-4;
+}
+
+/* SimilarProducts Component specific styles */
+
+.similar-products-container {
+  @apply mx-auto w-[80%];
+}
+
+.similar-products-title {
+  @apply text-secondary font-bold my-2 text-[1.2em];
+}
+
+.similar-products-description {
+  @apply text-gray-500;
+}
+
+/* ProductCard Component specific styles */
+.product-card-container {
+  @apply flex flex-col items-center justify-center border border-gray-300 rounded p-4;
+}
+
+.product-card-image {
+  @apply max-w-full h-auto;
+}
+
+.product-card-description {
+  @apply mt-4 font-semibold;
+}
+
+.product-card-price-container {
+  @apply flex justify-between items-center mt-4;
+}
+.product-card-price {
+  @apply text-secondary text-[1.2em];
+}
+
+.product-card-orginal-price {
+  @apply text-gray-500 line-through text-[.8em];
+}
+.product-card-discount {
+  @apply font-bold mx-1 bg-primary text-[0.8em] text-black;
+}
+.product-card-brand-logo {
+  @apply w-12 mx-4 h-auto;
+}
+
+.product-card-rating {
+  @apply font-bold mt-4;
+}
+.product-card-stars {
+  @apply text-yellow-500 text-[1.2em];
+}
+
+.product-card-location {
+  @apply mt-4;
+}
+
+/* Footer Component specific styles */
+
+.footer {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-[#3C3C3B] text-white;
+}
+
+.footer-about,
+.footer-services {
+  @apply md:col-span-1;
+}
+
+.footer-services {
+  @apply ml-5;
+}
+
+.footer-bottom {
+  @apply flex border-t border-dotted pt-3 border-gray-200 flex-col md:flex-row justify-between items-center col-span-1 md:col-span-2 mt-4 md:mt-0;
+}
+
+.footer-text {
+  @apply text-center md:text-left;
+}
+
+.footer-payment {
+  @apply flex justify-center md:justify-start mt-4 md:mt-0;
+}
+
+.footer-payment-img {
+  @apply mx-2;
+}
+
+.footer-powered {
+  @apply flex items-center mt-4 md:mt-0;
 }

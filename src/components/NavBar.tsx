@@ -1,35 +1,70 @@
-const NavBar = () => {
+const NavBar = ({ count }: { count: number }) => {
+  // TODO: Add interactivity
   return (
-    <div className="bg-white text-gray-900 flex justify-between items-center p-4 shadow">
-      <div className="flex items-center space-x-4">
-        <div className="flex items-center border border-gray-300 rounded-full px-2">
-          <img src="images/search.svg" alt="search" />
+    <div className="navbar-container">
+      {/* Search Button */}
+      <div className="navbar-search">
+        <div className="navbar-search-input-container">
+          <img
+            src="images/search.svg"
+            alt="Search icon"
+            width="24"
+            height="24"
+          />
           <input
             type="text"
             placeholder="Search"
-            className=" px-4 py-2 w-64 "
+            className="navbar-search-input"
+            aria-label="Search"
           />
         </div>
       </div>
-      <div className="flex items-center  mx-auto space-x-1">
-        <img src="images/adidas-large.svg" alt="adidas" />
+      {/* Logo */}
+      <div className="navbar-logo">
+        <img
+          src="images/adidas-large.svg"
+          alt="Adidas logo"
+          width="100"
+          height="100"
+        />
       </div>
-      <div className="flex items-center space-x-4">
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/cart.svg" alt="cart" />
-          <span>Cart</span>
-        </a>
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/heart.svg" alt="heart" />
-          <span>Wishlist</span>
-        </a>
-        <a href="#" className="flex items-center space-x-1">
-          <img src="images/person.svg" alt="person" />
-          <span>Login</span>
-        </a>
+      {/* Login, Cart and Wishlist */}
+      <div className="navbar-links">
+        <NavLink
+          href="#"
+          imgSrc="images/cart.svg"
+          imgAlt="Shopping cart"
+          text="Cart"
+        />
+        <NavLink
+          href="#"
+          imgSrc="images/heart.svg"
+          imgAlt="Wishlist"
+          text="Wishlist"
+        />
+        <NavLink
+          href="#"
+          imgSrc="images/person.svg"
+          imgAlt="User login"
+          text="Login"
+        />
       </div>
     </div>
   );
 };
+
+type NavLinkProps = {
+  href: string;
+  imgSrc: string;
+  imgAlt: string;
+  text: string;
+};
+
+const NavLink = ({ href, imgSrc, imgAlt, text }: NavLinkProps) => (
+  <a href={href} className="navbar-link">
+    <img src={imgSrc} alt={imgAlt} width="24" height="24" />
+    <span>{text}</span>
+  </a>
+);
 
 export default NavBar;

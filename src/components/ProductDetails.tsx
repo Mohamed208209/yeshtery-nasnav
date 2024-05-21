@@ -3,58 +3,43 @@ import QuantityButton from "./QuantityButton";
 
 const ProductDetails = () => {
   return (
-    <div className="max-w-sm mx-auto  ">
+    <div className="container">
       <header>
-        <img className="mb-2" src="images/adidas.svg" alt="adidas" />
-        <h1 className="text-lg font-bold">
+        <img src="images/adidas.svg" alt="Adidas logo" />
+        <h1>
           Adidas black t-Shirt lorem ipsum dolor sit amet, consectetur
           adipiscing elit.
         </h1>
-        <p className="text-gray-500">Men</p>
+        <p>Men</p>
       </header>
-      <div className="text-yellow-500 text-[1.5em] my-4">
-        ★★★★☆ <span className="text-black font-bold">4.9 of 5</span>{" "}
-        <span className="text-gray-500 text-[.7em]"> 22 Rates</span>
+      <div className="rating">
+        ★★★★☆ <span>4.9 of 5</span>
+        <span className="rates"> 22 Rates</span>
       </div>
-      <div className="text-secondary text-[1.8em] ">
-        9,999 LE{" "}
-        <span className="text-gray-500 line-through text-[.7em]">9,999 LE</span>{" "}
-        <span className="font-bold bg-primary text-[0.8em] text-black ">
-          - 30% Off
-        </span>
+      <div className="price">
+        9,999 LE
+        <span className="original-price">9,999 LE</span>
+        <span className="discount">- 30% Off</span>
       </div>
-      <div className="border border-gray-300 rounded"></div>
+      <div className="divider"></div>
       <p className="font-bold text-lg my-4">Size</p>
-      <div className="flex gap-4 text-[0.8em] ">
-        <button className="border h-16 w-16 font-bold text-secondary  rounded-full border-gray-300  text-center px-1 ">
-          Small
-        </button>
-
-        <button className="border h-16 w-16 font-bold text-secondary  rounded-full border-gray-300  text-center px-1 ">
-          Medium
-        </button>
-
-        <button className="border h-16 w-16 font-bold text-secondary  rounded-full border-gray-300  text-center px-1 ">
-          Large
-        </button>
-
-        <button className="border h-16 w-16 font-bold text-secondary  rounded-full border-gray-300  text-center px-1 ">
-          X Large
-        </button>
-        <button className="border h-16 w-16 font-bold text-secondary  rounded-full border-gray-300  text-center px-1 ">
-          XX Large
-        </button>
+      <div className="size-options">
+        {["Small", "Medium", "Large", "X Large", "XX Large"].map((size) => (
+          <button type="button" key={size} aria-label={`Select size ${size}`}>
+            {size}
+          </button>
+        ))}
       </div>
-      <p className="font-bold text-lg my-4">Color</p>{" "}
-      <div className="mt-2 flex gap-3">
-        <img src="images/red-tshirt.png" alt="Red T-Shirt" />{" "}
+      <p className="font-bold text-lg my-4">Color</p>
+      <div className="color-options">
+        <img src="images/red-tshirt.png" alt="Red T-Shirt" />
         <img src="images/black-tshirt.png" alt="Black T-Shirt" />
       </div>
-      <div className="mt-4">
-        <p className="font-bold text-lg my-2"> Quantity:</p>
+      <div className="quantity">
+        <p className="font-bold text-lg my-2">Quantity:</p>
         <QuantityButton />
       </div>
-      <div className="mt-4 flex gap-5 ">
+      <div className="actions">
         <CustomButton color="secondary" text="Add To Cart" />
         <CustomButton color="primary" text="Pick From Store" />
       </div>

@@ -1,35 +1,27 @@
 const ProductGallery = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div>
-        <img className="w-96" src="images/product.png" alt="Main Product" />
+    <div className="product-gallery-container">
+      {/* Main Product Image */}
+      <div className="product-gallery-main">
+        <img src="images/product.png" alt="Main Product" />
       </div>
 
-      <div className="flex  space-x-2 mt-4">
-        <button>
+      {/* Thumbnail Gallery */}
+      <div className="product-gallery-thumbnails">
+        {/* Left Arrow Button */}
+        <button type="button">
           <img src="images/left-arrow.svg" alt="left" />
         </button>
-        <img
-          src="images/thumbnail-1.png"
-          alt="Thumbnail 1"
-          className="w-20 h-20"
-        />
-        <img
-          src="images/thumbnail-2.png"
-          alt="Thumbnail 2"
-          className="w-20 h-20"
-        />
-        <img
-          src="images/thumbnail-3.png"
-          alt="Thumbnail 3"
-          className="w-20 h-20"
-        />
-        <img
-          className="w-20 h-20"
-          src="images/thumbnail-4.png"
-          alt="Thumbnail 4"
-        />
-        <button>
+        {/* Thumbnails */}
+        {[1, 2, 3, 4].map((index) => (
+          <img
+            key={index}
+            src={`images/thumbnail-${index}.png`}
+            alt={`Thumbnail ${index}`}
+          />
+        ))}
+        {/* Right Arrow Button */}
+        <button type="button">
           <img src="images/right-arrow.svg" alt="right" />
         </button>
       </div>

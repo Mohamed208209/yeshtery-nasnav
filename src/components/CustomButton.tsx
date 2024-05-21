@@ -1,16 +1,20 @@
+import React from "react";
+
 type Props = {
   text: string;
   color: "primary" | "secondary";
 };
 
 const CustomButton = ({ text, color }: Props) => {
-  const textColor = color === "primary" ? "black" : "white";
+  const textColor = color === "primary" ? "text-black" : "text-white";
+  const bgColor = color === "primary" ? "bg-primary" : "bg-secondary";
+
   return (
-    <div
-      className={`bg-${color} text-${textColor} rounded-full text-center py-3 px-8`}
+    <button
+      className={`rounded-3xl py-3 text-center px-10 ${bgColor} ${textColor} focus:outline-none`}
     >
-      <button>{text}</button>
-    </div>
+      {text}
+    </button>
   );
 };
 

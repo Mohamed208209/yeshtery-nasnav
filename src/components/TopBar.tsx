@@ -2,11 +2,11 @@ import CategoryBar from "./CategoryBar";
 import EventBar from "./EventBar";
 import NavBar from "./NavBar";
 
-const TopBar = () => {
+const TopBar = ({ count }: { count: number }) => {
   return (
     <header>
       <EventBar />
-      <NavBar />
+      <NavBar count={count} />
       <CategoryBar />
     </header>
   );

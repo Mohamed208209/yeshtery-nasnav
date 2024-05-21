@@ -4,15 +4,13 @@ import SimilarProducts from "./SimilarProducts";
 
 export const Product = () => {
   return (
-    <main>
-      <div className="flex my-14  items-center   flex-col">
-        <div className="flex space-x-4">
-          <ProductGallery />
-          <ProductDetails />
-        </div>
-        <div className="w-full">
-          <SimilarProducts />
-        </div>
+    <main className="flex flex-col mt-8 border-t border-dotted border-gray-500 py-8 my-14">
+      <div className="flex flex-col lg:flex-row lg:space-x-4 gap-8 justify-center">
+        <ProductGallery />
+        <ProductDetails />
+      </div>
+      <div className="w-full mt-8">
+        <SimilarProducts />
       </div>
     </main>
   );
